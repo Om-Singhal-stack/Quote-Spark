@@ -38,6 +38,10 @@ try {
 	const response = await fetch(url, options);
 	const result = await response.json();
 	console.log(result.text);
+	const container = document.querySelector("#main_quotes");
+        const text = document.createElement("p");
+        text.innerText = result[0].text;
+        container.appendChild(text);
 } catch (error) {
 	console.error(error);
 }
