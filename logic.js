@@ -10,16 +10,16 @@ const options = {
 };
 async function mycall() {
 	try {
-		const response = await fetch(url, options);
-		const result = await response.json();
-		// console.log(result.quote.quote);
+		// const response = await fetch(url, options);
+		// const result = await response.json();
 		const container = document.querySelector("#main_quotes");
+		const container2 = document.querySelector("#main_aut_name");
 		const text = document.createElement("p");
 		const auth_text = document.createElement("p");
 		text.innerText = result.quote.quote;
 		auth_text.innerText = result.quote.author;
 		container.appendChild(text);
-		container.appendChild(auth_text);
+		container2.appendChild(auth_text);
 	} catch (error) {
 		console.error(error);
 	}
