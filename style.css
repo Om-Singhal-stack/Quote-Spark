@@ -3,23 +3,48 @@
     padding: 0;
 }
 #main_heading{
+    text-align: center;
     font-family: "Roboto Mono", monospace;
-    margin: 7% 50%;
+    margin: 7% 0%;
+
     color: rgba(55, 145, 127, 0.993);
 }
 
 #main_quotes{
-    background-color: brown;
+    background-color: rgb(233, 199, 132);
     margin: 4% 10% .5% 10%;
     border-radius: 10px 10px 0px 0px;
-    height: 40vh;
-    padding: 1%;
+    padding: 20px;
+    min-height: 30vh;
+    max-height: 60vh;
+    text-align: center;
 }
+
 #main_aut_name{
-    background-color: brown;
+    background-color: rgb(233, 184, 184);
     margin: 0% 10%;
-    height: 10vh;
+    text-align: end;
+    min-height: 10vh;
+    max-height: 15vh;
+    padding: 20px;
     border-radius: 0px 0px 10px 10px;
+}
+a{ 
+    display: block;
+    padding: 20px 10px;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 2vh;
+    text-align: center;
+    padding: 0% 45%;
+    
+    
+}
+img{
+    height: 20px;
+    background-color: aquamarine;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
 
